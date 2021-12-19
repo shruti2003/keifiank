@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="que6.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel = "stylesheet" href = "style.css">
+<style>
+img{
+  height: 200px; 
+  width: 200px; 
+  margin-left: 5%;
+  
+  }
+  .logo{
+    margin-left: 43%; 
+  }
+body,h1,h2,h3,h4,h5 {
+  color: #50613F; 
+  font-family: "Raleway", sans-serif}
+#question{
+    text-align: center;
+}
+#answers{
+    text-align: center; 
+}
+button{
+    font-family: "Raleway";
+    margin: 20px;
+    height: 400px;
+    width: 250px; 
+    border-radius: 10px;
+    border: white;
+    vertical-align: bottom;
+    color:#50613F
+;
+    
+}
+.button:hover {
+  border:#50613F; 
+}
+
+
+</style>
+<body style = "background-color: #F1EDE4;">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="header"> 
+  <img class = "logo" src="Assets/logo2.png" alt="">
+
+</header>
+<body>
+    <h3 id = "question">What do you value most in a necklace?</h3>
+    <div class="container">
+        <button id = "16" class="btn-1" onclick="getId(this)"><a href="result.html"><img src= "Assets/26.png" alt=""><span>Colorful</span></a></button>
+        <button id = "26" class="btn-1" onclick="getId(this)"><a href="result.html"><img src="Assets/27.png" alt=""><span>Bold</span></a></button>
+        <button id = "36" class="btn-1" onclick="getId(this)"><a href="result.html"><img src="Assets/28.png" alt=""><span>Detailed</span></a></button>
+        <button id = "46" class="btn-1" onclick="getId(this)"><a href="result.html"><img src="Assets/29.png" alt=""><span>A good balance</span></a></button>
+        <button id = "56" class="btn-1" onclick="getId(this)"><a href="result.html"><img src="Assets/30.png" alt=""><span>Elegant</span></a></button>
+        <button id = "66" class="btn-1" onclick="getId(this)"><a href="result.html"><img src="Assets/31.png" alt=""><span>Simple</span></a></button>
+      </div>
+</body>

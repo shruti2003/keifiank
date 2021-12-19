@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="result.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+#result{
+    height: 30%; 
+    width: 30%;
+    margin-left: 35%; 
+    border-color: #50613F;
+    border: 5px solid #50613F;
+}
+  .logo{
+    margin-left: 43%; 
+    height: 200px; 
+  width: 200px; 
+  }
+body,h1,h2,h3,h4,h5 {
+  color: #50613F; 
+  font-family: "Raleway", sans-serif}
+#question{
+    text-align: center;
+}
+#answers{
+    text-align: center; 
+}
+#p1{
+    text-align: center; 
+}
+
+button{
+    font-family: "Raleway";
+    margin: 20px;
+    height: 400px;
+    width: 250px; 
+    border-radius: 10px;
+    border: white;
+    vertical-align: bottom;
+    color:#50613F
+;
+    
+}
+.button:hover {
+  border:#50613F; 
+}
+
+
+</style>
+<body style = "background-color: #F1EDE4;">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="header"> 
+  <img class = "logo" src="Assets/logo2.png" alt="">
+
+</header>
+<body>
+    <h3 id = "question">You are matched with: </h3>
+    <h3 id="p1"></h3>
+    <br>
+    <img id = "result" src = "assets/L' Imperatice.jpeg" alt = "">
+    <br>
+    <br>
+</body>
+<link rel = "stylesheet" href = "style.css">
+   
+</div>
+</body>
+<script>
+    document.getElementById("p1").innerHTML = choice;
+    choiceFinal = "assets/" + String(choice) + ".jpeg"
+    console.log(choiceFinal);
+
+   document.getElementById("result").src = choiceFinal;
+    
+   
+    </script>
+    
+</html>
+

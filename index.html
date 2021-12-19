@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="code.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel = "stylesheet" href = "style.css">
+
+<style>
+img{
+  height: 200px; 
+  width: 200px; 
+  margin-left: 5%;
+  
+  }
+  .logo{
+    margin-left: 43%; 
+  }
+body,h1,h2,h3,h4,h5 {
+  color: #50613F; 
+  font-family: "Raleway", sans-serif}
+#question{
+    text-align: center;
+}
+#answers{
+    text-align: center; 
+}
+button{
+    font-family: "Raleway";
+    margin: 20px;
+    height: 400px;
+    width: 250px; 
+    border-radius: 10px;
+    border: white;
+    vertical-align: bottom;
+    color:#50613F
+;
+    
+}
+.button:hover {
+  border:#50613F; 
+}
+
+
+</style>
+<body style = "background-color: #F1EDE4;">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="header"> 
+  <img class = "logo" src="Assets/logo2.png" alt="">
+</header>
+
+
+<body>
+    <h3 id = "question">What is your zodiac sign?</h3>
+    <div class="container">
+        <button id = "1" class="btn-1" onclick="getId(this)"><a href="que2.html"><img src="Assets/aries.png" alt=""><span class = "span">Aries</span></a></button>
+        <button id = "2" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/taurus.png" alt=""><span class = "span_ID">Taurus</span></a></button>
+        <button id = "3" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/gemini.png" alt=""><span class = "span_ID">Gemini</span></a></button>
+        <button id = "4" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/cancer.png" alt=""><span class = "span_ID">Cancer</span></a></button>
+        <button id = "5" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/leo.png" alt=""><span class = "span_ID">Leo</span></a></button>
+        <button id = "6" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/virgo.png" alt=""><span class = "span_ID">Virgo</span></a></button>
+        <button id = "7" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/libra1.png" alt=""><span class = "span_ID">Libra</span></a></button>
+        <button id = "8" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/scorpio.png" alt=""><span class = "span_ID">Scorpius </span></a></button>
+        <button id = "9" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/sagg.png" alt=""><span class = "span_ID">Sagittarius </span></a></button>
+        <button id = "10" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/capricorn.png" alt=""><span class = "span_ID">Capricornus</span></a></button>
+        <button id = "11" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/aqu.png" alt=""><span class = "span_ID">Aquarius </span></a></button>
+        <button id = "12" class="btn-1"  onclick="getId(this)"><a href="que2.html"><img src="Assets/pisces.png" alt=""><span class = "span_ID">Pisces </span></a></button>
+      </div>
+</body>
