@@ -59,14 +59,13 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="header"> 
-  <a href = "https://keifiank.squarespace.com/">  <img class = "logo" src="Assets/logo2.png" alt="">
-  </a>
+  <a href = "https://keifiank.squarespace.com/">  <img class = "logo" src="Assets/logo2.png" alt=""></a>
 </header>
 <body>
     <h3 id = "question">You are matched with: </h3>
     <h3 id="p1"></h3>
     <br>
-    <img id = "result" src = "assets/L' Imperatice.jpeg" alt = "">
+    <img id = "result" src = "Assets/L' Imperatice.jpeg" alt = "">
     <br>
     <br>
 </body>
@@ -76,7 +75,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </body>
 <script>
     document.getElementById("p1").innerHTML = choice;
-    choiceFinal = "assets/" + String(choice) + ".jpeg"
+    choiceFinal = "Assets/" + String(choice) + ".jpeg"
     console.log(choiceFinal);
 
    document.getElementById("result").src = choiceFinal;
