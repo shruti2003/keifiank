@@ -59,13 +59,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 
 <!-- Header -->
 <header class="header"> 
-  <a href = "https://keifiank.squarespace.com/">  <img class = "logo" src="Assets/logo2.png" alt=""></a>
+  <a href = "https://keifiank.squarespace.com/">  <img class = "logo" src="Assets/logo2.png" alt="">
+  </a>
+
 </header>
 <body>
     <h3 id = "question">You are matched with: </h3>
-    <h3 id="p1"></h3>
+    <a id = "resultLink2" href="https://keifiank.squarespace.com/shop/p/limper-atrice"><h3 id="p1"></h3></a>
     <br>
-    <img id = "result" src = "Assets/L' Imperatice.jpeg" alt = "">
+    <a id = "resultLink" href="https://keifiank.squarespace.com/shop/p/limper-atrice"> <img id = "result" src = "assets/L' Imperatice.jpeg" alt = ""></a>
     <br>
     <br>
 </body>
@@ -75,11 +77,44 @@ and is wrapped around the whole page content, except for the footer in this exam
 </body>
 <script>
     document.getElementById("p1").innerHTML = choice;
-    choiceFinal = "Assets/" + String(choice) + ".jpeg"
-    console.log(choiceFinal);
+    choiceFinal = "assets/" + String(choice) + ".jpeg"
+    console.log(choice);
 
    document.getElementById("result").src = choiceFinal;
-    
+   if(choice == "La Force"){
+    document.getElementById("resultLink2").href = "https://keifiank.squarespace.com/shop/p/jason-necklace-9fy74";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/jason-necklace-9fy74";
+   }
+   else if(choice == "Le Monde"){
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/sam-necklace-x463n";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/sam-necklace-x463n";
+   }
+   else  if(choice == "L' Etoile"){
+    document.getElementById("resultLink2").href = "https://keifiank.squarespace.com/shop/p/jared-necklace-72hhm";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/jared-necklace-72hhm";
+   }
+    else if(choice == "L' Imperatice"){
+      console.log("Imperatice")
+      document.getElementById("resultLink2").href = "https://keifiank.squarespace.com/shop/p/limper-atrice";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/limper-atrice";
+   }
+    else if(choice == "Lamoureux"){
+      console.log("Lamoureux")
+      document.getElementById("resultLink2").href = "https://keifiank.squarespace.com/shop/p/landureux";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/landureux";
+   }
+    else if(choice == "La Luna"){
+      document.getElementById("resultLink2").href = "https://keifiank.squarespace.com/shop/p/landureux";
+
+    document.getElementById("resultLink").href = "https://keifiank.squarespace.com/shop/p/landureux";
+   }
+
+
    
     </script>
     
